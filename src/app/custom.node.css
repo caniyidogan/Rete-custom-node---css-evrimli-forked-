@@ -1,0 +1,76 @@
+:root{
+  --node-width: 200px;
+  --socket-margin: 6px;
+  --socket-size: 16px;
+}
+
+:host.selected{
+  border-color: red;
+}
+
+:host:hover{
+  background-color: #333;
+} 
+
+.title{
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.output{
+  text-align: right;
+}
+
+.input{
+  text-align: left;
+}
+
+.output-socket{
+  text-align: right;
+  margin-right: -1px;
+  display: inline-block;
+}
+.input-socket{
+  text-align: left;
+  margin-left: -1px;
+  display: inline-block;
+}
+
+.input-title .output-title
+{
+  vertical-align: middle;
+  color: white;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 6px;
+  line-height: 16px;
+}
+
+.input-control{
+  z-index: 1;
+  width: 72%;
+  /* width: calc(100% - (var(--socket-size) + (2 * var(--socket-margin)))); */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.control{  
+  padding: 6px 14px;
+}
+
+:host{
+  display: block;
+  background: rgb(224, 31, 31);
+  border: 2px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 200px;
+  height: auto;
+  padding-bottom: 6px;
+  position: relative;
+  user-select: none;
+}
